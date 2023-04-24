@@ -46,7 +46,7 @@ pluginBundle {
 }
 
 task checkJavaVersion doLast {
-    if (!JavaVersion.current().isJava6()) {
+    if (!JavaVersion.current().isJava6Compatible()) {
         throw new GradleException(
                 "JDK 1.6 is required (found ${JavaVersion.current()}).")
     }
