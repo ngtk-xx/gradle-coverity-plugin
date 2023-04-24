@@ -30,6 +30,7 @@ import com.github.mjdetullio.gradle.coverity.model.CoverityRootExtension
 import com.github.mjdetullio.gradle.coverity.util.Utils
 import org.gradle.api.DefaultTask
 import org.gradle.api.Project
+import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
 
 /**
@@ -49,6 +50,7 @@ class CovEmitJavaTask extends DefaultTask {
      * Specifies any additional arguments to be passed to <i>each</i> external
      * <code>cov-emit-java</code> execution.
      */
+    @Internal
     List<String> additionalArgs
 
     /**

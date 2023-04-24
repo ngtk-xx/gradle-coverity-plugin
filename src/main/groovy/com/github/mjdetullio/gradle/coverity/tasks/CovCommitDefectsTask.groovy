@@ -26,6 +26,7 @@ package com.github.mjdetullio.gradle.coverity.tasks
 import com.github.mjdetullio.gradle.coverity.model.CoverityRootExtension
 import com.github.mjdetullio.gradle.coverity.util.Utils
 import org.gradle.api.DefaultTask
+import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
 
 /**
@@ -41,6 +42,7 @@ class CovCommitDefectsTask extends DefaultTask {
      * Specifies any additonal arguments to be passed to the external
      * <code>cov-commit-defects</code> execution.
      */
+    @Internal
     List<String> additionalArgs
 
     /**

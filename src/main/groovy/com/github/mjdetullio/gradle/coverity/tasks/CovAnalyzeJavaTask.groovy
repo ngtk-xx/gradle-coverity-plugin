@@ -26,6 +26,7 @@ package com.github.mjdetullio.gradle.coverity.tasks
 import com.github.mjdetullio.gradle.coverity.model.CoverityRootExtension
 import com.github.mjdetullio.gradle.coverity.util.Utils
 import org.gradle.api.DefaultTask
+import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
 
 /**
@@ -42,6 +43,7 @@ class CovAnalyzeJavaTask extends DefaultTask {
      * Specifies any additional arguments to be passed to the external
      * <code>cov-analyze</code> execution.
      */
+    @Internal
     List<String> additionalArgs
 
     /**
